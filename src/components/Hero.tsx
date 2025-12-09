@@ -44,7 +44,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen sm:min-h-[140vh] flex items-start justify-center overflow-hidden"
+      className="relative min-h-[200vh] sm:min-h-[140vh] flex items-start justify-center overflow-hidden"
     >
       {/* Background Carousel */}
       <div className="absolute inset-0">
@@ -65,11 +65,11 @@ export function Hero() {
           <CarouselContent className="h-full -ml-0">
             {heroImages.map((image, index) => (
               <CarouselItem key={index} className="h-full pl-0">
-                <div className="relative w-full min-h-screen sm:min-h-[140vh]">
+                <div className="relative w-full min-h-[200vh] sm:min-h-[140vh]">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover object-[center_20%] sm:object-center"
+                    className="w-full h-full object-cover object-top sm:object-center"
                   />
                   {/* Dark overlay */}
                   <div className="absolute inset-0 bg-primary/80" />
