@@ -58,7 +58,7 @@ export function Header() {
             <img 
               src={logoContemporanea} 
               alt="Contemporânea Contábil" 
-              className={`h-[68px] w-auto transition-all duration-300 ${
+              className={`h-[120px] w-auto transition-all duration-300 ${
                 isScrolled ? "brightness-0" : "brightness-0 invert"
               }`}
             />
