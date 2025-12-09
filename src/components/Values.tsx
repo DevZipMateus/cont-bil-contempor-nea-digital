@@ -1,4 +1,4 @@
-import { Eye, Target, Heart, Lightbulb, Award, Users } from "lucide-react";
+import { Eye, Target, Heart, Lightbulb, Award } from "lucide-react";
 
 const values = [
   {
@@ -35,19 +35,21 @@ export function Values() {
       <div className="container-custom relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-sm font-medium text-accent uppercase tracking-wider mb-4">
+          <span className="inline-block text-sm font-medium text-accent uppercase tracking-wider mb-4 animate-fade-up">
             O que nos guia
           </span>
-          <h2 className="heading-display text-3xl sm:text-4xl md:text-5xl text-primary-foreground mb-6">
+          <h2 className="heading-display text-3xl sm:text-4xl md:text-5xl text-primary-foreground mb-6 animate-fade-up animation-delay-100">
             Missão, visão e valores
           </h2>
         </div>
 
         {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-primary-foreground/5 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/10">
+          <div className="group bg-primary-foreground/5 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/10 hover:bg-primary-foreground/10 hover:border-accent/30 transition-all duration-500 hover:scale-[1.02] hover:shadow-xl animate-fade-up animation-delay-200">
             <div className="flex items-center gap-3 mb-4">
-              <Target className="w-8 h-8 text-accent" />
+              <div className="p-2 rounded-xl bg-accent/20 group-hover:bg-accent/30 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+                <Target className="w-8 h-8 text-accent group-hover:animate-pulse" />
+              </div>
               <h3 className="font-playfair text-2xl font-semibold text-primary-foreground">
                 Missão
               </h3>
@@ -58,9 +60,11 @@ export function Values() {
             </p>
           </div>
 
-          <div className="bg-primary-foreground/5 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/10">
+          <div className="group bg-primary-foreground/5 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/10 hover:bg-primary-foreground/10 hover:border-accent/30 transition-all duration-500 hover:scale-[1.02] hover:shadow-xl animate-fade-up animation-delay-300">
             <div className="flex items-center gap-3 mb-4">
-              <Eye className="w-8 h-8 text-accent" />
+              <div className="p-2 rounded-xl bg-accent/20 group-hover:bg-accent/30 transition-all duration-300 group-hover:scale-110 group-hover:-rotate-3">
+                <Eye className="w-8 h-8 text-accent group-hover:animate-pulse" />
+              </div>
               <h3 className="font-playfair text-2xl font-semibold text-primary-foreground">
                 Visão
               </h3>
@@ -77,12 +81,13 @@ export function Values() {
           {values.map((value, index) => (
             <div
               key={index}
-              className="text-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 hover:bg-primary-foreground/10 transition-colors"
+              className="group text-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 hover:bg-primary-foreground/10 hover:border-accent/30 transition-all duration-500 hover:scale-105 hover:shadow-xl animate-fade-up"
+              style={{ animationDelay: `${400 + index * 100}ms` }}
             >
-              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-accent/20 flex items-center justify-center">
-                <value.icon className="w-7 h-7 text-accent" />
+              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-accent/20 flex items-center justify-center group-hover:bg-accent/30 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                <value.icon className="w-7 h-7 text-accent transition-transform duration-300 group-hover:scale-110" />
               </div>
-              <h3 className="font-semibold text-lg text-primary-foreground mb-1">
+              <h3 className="font-semibold text-lg text-primary-foreground mb-1 group-hover:text-accent transition-colors duration-300">
                 {value.label}
               </h3>
               <p className="text-sm text-primary-foreground/60">
