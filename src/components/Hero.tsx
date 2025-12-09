@@ -66,10 +66,11 @@ export function Hero() {
             {heroImages.map((image, index) => (
               <CarouselItem key={index} className="h-full pl-0">
                 <div className="relative w-full min-h-[200vh] sm:min-h-[140vh]">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover object-top sm:object-center"
+                  <div
+                    className="w-full h-full bg-cover bg-top sm:bg-center"
+                    style={{ backgroundImage: `url(${image.src})` }}
+                    role="img"
+                    aria-label={image.alt}
                   />
                   {/* Dark overlay */}
                   <div className="absolute inset-0 bg-primary/80" />
