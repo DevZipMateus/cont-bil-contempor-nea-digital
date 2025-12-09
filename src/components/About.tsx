@@ -76,7 +76,7 @@ export function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 rounded-3xl transform -rotate-3" />
               
               {/* Main card */}
-              <div className="relative bg-card rounded-3xl shadow-card p-8 h-full flex flex-col justify-center border border-border">
+              <div className="relative bg-card rounded-3xl shadow-card p-8 min-h-[420px] sm:h-full flex flex-col justify-center border border-border">
                 <div className="text-center">
                   <img 
                     src={logoHistoria} 
