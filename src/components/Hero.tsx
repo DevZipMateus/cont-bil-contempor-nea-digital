@@ -112,7 +112,7 @@ export function Hero() {
         }}
       />
 
-      <div className="container-custom relative z-20 pt-28 md:pt-32">
+      <div className="container-custom relative z-20 pt-24 md:pt-28">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 mb-8 animate-fade-up">
@@ -134,7 +134,7 @@ export function Hero() {
           </h2>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up animation-delay-300">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 animate-fade-up animation-delay-300">
             <Button
               asChild
               size="lg"
@@ -160,7 +160,7 @@ export function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto animate-fade-up animation-delay-400">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto animate-fade-up animation-delay-400 mt-8">
             <div className="flex flex-col items-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
               <TrendingUp className="w-8 h-8 text-accent mb-3" />
               <span className="text-2xl font-bold text-primary-foreground">+500</span>
