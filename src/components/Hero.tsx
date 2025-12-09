@@ -44,7 +44,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-[180vh] sm:min-h-[140vh] flex items-start justify-center overflow-hidden"
+      className="relative min-h-[220vh] sm:min-h-[140vh] flex items-start justify-center overflow-hidden"
     >
       {/* Background Carousel */}
       <div className="absolute inset-0">
@@ -65,7 +65,7 @@ export function Hero() {
           <CarouselContent className="h-full -ml-0">
             {heroImages.map((image, index) => (
               <CarouselItem key={index} className="h-full pl-0">
-                <div className="relative w-full min-h-[180vh] sm:min-h-[140vh]">
+                <div className="relative w-full min-h-[220vh] sm:min-h-[140vh]">
                   <img
                     src={image.src}
                     alt={image.alt}
