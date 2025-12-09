@@ -1,4 +1,5 @@
 import { CheckCircle, Award, Target } from "lucide-react";
+import logoHistoria from "@/assets/logo-historia.png";
 
 export function About() {
   return (
@@ -77,9 +78,11 @@ export function About() {
               {/* Main card */}
               <div className="relative bg-card rounded-3xl shadow-card p-8 h-full flex flex-col justify-center border border-border">
                 <div className="text-center">
-                  <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-primary flex items-center justify-center">
-                    <span className="text-5xl font-playfair font-bold text-primary-foreground">C</span>
-                  </div>
+                  <img 
+                    src={logoHistoria} 
+                    alt="Contemporânea Contábil" 
+                    className="w-48 h-auto mx-auto mb-6"
+                  />
                   <h3 className="font-playfair text-2xl font-semibold text-foreground mb-2">
                     Contemporânea Contábil
                   </h3>
