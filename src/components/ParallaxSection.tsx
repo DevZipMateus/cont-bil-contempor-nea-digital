@@ -18,7 +18,7 @@ export function ParallaxSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center">
+      <div className="relative z-10 h-full flex items-center justify-center pb-12 md:pb-16">
         <div className="container-custom text-center">
           <h2 className="heading-display text-3xl sm:text-4xl md:text-5xl text-primary-foreground mb-4 animate-fade-up">
             Pronto para transformar sua contabilidade?
