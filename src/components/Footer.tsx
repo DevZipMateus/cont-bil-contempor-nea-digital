@@ -34,7 +34,7 @@ export function Footer() {
               <img 
                 src={logoContemporanea} 
                 alt="Contemporânea Contábil" 
-                className="h-14 w-auto brightness-0 invert group-hover:opacity-80 transition-all duration-300"
+                className="h-[78px] w-auto brightness-0 invert group-hover:opacity-80 transition-all duration-300"
               />
             </div>
             <p className="text-primary-foreground/70 max-w-sm mb-4 leading-relaxed">
