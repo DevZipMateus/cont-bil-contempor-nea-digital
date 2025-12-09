@@ -69,7 +69,7 @@ export function Hero() {
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full min-h-full object-cover object-top sm:object-center absolute inset-0"
                   />
                   {/* Dark overlay */}
                   <div className="absolute inset-0 bg-primary/80" />
