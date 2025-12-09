@@ -93,7 +93,7 @@ export function About() {
                     </div>
                     <div className="w-px bg-border" />
                     <div className="text-center">
-                      <span className="block text-2xl font-bold text-accent">98%</span>
+                      <span className="block text-2xl font-bold text-accent">100%</span>
                       <span className="text-xs text-muted-foreground">Satisfação</span>
                     </div>
                   </div>
