@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import logoContemporanea from "@/assets/logo-contemporanea.png";
 
 const navLinks = [
   { href: "#inicio", label: "Início" },
@@ -30,12 +31,11 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4 group">
-              <div className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center transition-all duration-300 group-hover:bg-accent/20 group-hover:scale-110 group-hover:rotate-3">
-                <span className="font-playfair font-bold text-xl text-accent">C</span>
-              </div>
-              <span className="font-playfair font-semibold text-lg group-hover:text-accent transition-colors duration-300">
-                Contemporânea Contábil
-              </span>
+              <img 
+                src={logoContemporanea} 
+                alt="Contemporânea Contábil" 
+                className="h-14 w-auto brightness-0 invert group-hover:opacity-80 transition-all duration-300"
+              />
             </div>
             <p className="text-primary-foreground/70 max-w-sm mb-4 leading-relaxed">
               Contabilidade moderna com confiança, transparência e resultados.

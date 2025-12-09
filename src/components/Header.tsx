@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoContemporanea from "@/assets/logo-contemporanea.png";
 
 const navLinks = [
   { href: "#inicio", label: "Início" },
@@ -52,16 +53,15 @@ export function Header() {
               e.preventDefault();
               handleNavClick("#inicio");
             }}
-            className="flex items-center gap-3"
+            className="flex items-center"
           >
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-playfair font-bold text-xl">C</span>
-            </div>
-            <span className={`font-playfair font-semibold text-lg transition-colors ${
-              isScrolled ? "text-foreground" : "text-primary-foreground"
-            }`}>
-              Contemporânea
-            </span>
+            <img 
+              src={logoContemporanea} 
+              alt="Contemporânea Contábil" 
+              className={`h-12 w-auto transition-all duration-300 ${
+                isScrolled ? "brightness-0" : "brightness-0 invert"
+              }`}
+            />
           </a>
 
           {/* Desktop Navigation */}
