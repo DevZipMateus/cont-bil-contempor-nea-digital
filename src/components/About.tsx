@@ -81,7 +81,7 @@ export function About() {
                   <img 
                     src={logoHistoria} 
                     alt="Contemporânea Contábil" 
-                    className="w-48 h-auto mx-auto mb-6"
+                    className="w-48 h-auto mx-auto mb-6 rounded-2xl"
                   />
                   <h3 className="font-playfair text-2xl font-semibold text-foreground mb-2">
                     Contemporânea Contábil
