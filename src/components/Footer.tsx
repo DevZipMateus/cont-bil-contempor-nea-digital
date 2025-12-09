@@ -29,11 +29,11 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center">
+            <div className="flex items-center gap-3 mb-4 group">
+              <div className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center transition-all duration-300 group-hover:bg-accent/20 group-hover:scale-110 group-hover:rotate-3">
                 <span className="font-playfair font-bold text-xl text-accent">C</span>
               </div>
-              <span className="font-playfair font-semibold text-lg">
+              <span className="font-playfair font-semibold text-lg group-hover:text-accent transition-colors duration-300">
                 Contemporânea Contábil
               </span>
             </div>
@@ -58,7 +58,7 @@ export function Footer() {
                       e.preventDefault();
                       handleNavClick(link.href);
                     }}
-                    className="text-primary-foreground/70 hover:text-accent transition-colors"
+                    className="text-primary-foreground/70 hover:text-accent transition-all duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.label}
                   </a>
@@ -76,24 +76,30 @@ export function Footer() {
                   href="https://wa.me/5555984546494"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors"
+                  className="group flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-all duration-300"
                 >
-                  <Phone className="w-4 h-4" />
-                  (55) 98454-6494
+                  <div className="p-1.5 rounded-lg bg-primary-foreground/5 group-hover:bg-accent/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                    <Phone className="w-4 h-4" />
+                  </div>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300">(55) 98454-6494</span>
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:contempocontabil@gmail.com"
-                  className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors"
+                  className="group flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-all duration-300"
                 >
-                  <Mail className="w-4 h-4" />
-                  contempocontabil@gmail.com
+                  <div className="p-1.5 rounded-lg bg-primary-foreground/5 group-hover:bg-accent/20 transition-all duration-300 group-hover:scale-110 group-hover:-rotate-6">
+                    <Mail className="w-4 h-4" />
+                  </div>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300">contempocontabil@gmail.com</span>
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-primary-foreground/70">
-                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                Alameda dos Ipês, 50
+              <li className="group flex items-start gap-2 text-primary-foreground/70">
+                <div className="p-1.5 rounded-lg bg-primary-foreground/5 group-hover:bg-accent/20 transition-all duration-300 group-hover:scale-110 mt-0.5">
+                  <MapPin className="w-4 h-4" />
+                </div>
+                <span className="group-hover:text-accent transition-colors duration-300">Alameda dos Ipês, 50</span>
               </li>
             </ul>
           </div>
