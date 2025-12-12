@@ -1,5 +1,5 @@
 import { CheckCircle, Award, Target } from "lucide-react";
-import logoHistoria from "@/assets/logo-historia.png";
+import logoHistoria from "@/assets/logo-historia-new.png";
 
 export function About() {
   return (
