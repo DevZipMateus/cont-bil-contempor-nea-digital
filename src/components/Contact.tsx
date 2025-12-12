@@ -98,7 +98,7 @@ export function Contact() {
 
           {/* Visual Card */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-primary to-navy-light rounded-3xl p-8 md:p-12 text-primary-foreground">
+            <div className="bg-primary rounded-3xl p-8 md:p-12 text-primary-foreground">
               <h3 className="font-playfair text-2xl md:text-3xl font-semibold mb-4">
                 Pronto para transformar sua contabilidade?
               </h3>
