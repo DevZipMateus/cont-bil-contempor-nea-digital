@@ -73,6 +73,7 @@ export function Hero() {
                 <div className="relative w-full min-h-[200vh] sm:min-h-[140vh]">
                   <img
                     src={image.src}
+                    style={{ objectPosition: index === 1 ? '50% 30%' : 'center' }}
                     alt={image.alt}
                     className="w-full min-h-full object-cover object-top sm:object-center absolute inset-0"
                   />
