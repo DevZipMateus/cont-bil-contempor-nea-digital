@@ -65,34 +65,34 @@ export function Services() {
     <section id="servicos" className="section-padding bg-muted/50">
       <div className="container-custom">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-sm font-medium text-accent uppercase tracking-wider mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 px-4 sm:px-0">
+          <span className="inline-block text-xs sm:text-sm font-medium text-accent uppercase tracking-wider mb-3 sm:mb-4">
             Nossos serviços
           </span>
-          <h2 className="heading-display text-3xl sm:text-4xl md:text-5xl text-foreground mb-6">
+          <h2 className="heading-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-foreground mb-4 sm:mb-6">
             Soluções completas para o{" "}
             <span className="text-gradient-gold">seu negócio</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground">
             Oferecemos uma gama completa de serviços contábeis e consultivos,
             adaptados às necessidades específicas de cada cliente.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-card rounded-2xl p-6 border border-border card-hover"
+              className="group bg-card rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 border border-border card-hover"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
-                <service.icon className="w-6 h-6 text-primary group-hover:text-accent transition-colors" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-accent/20 transition-colors">
+                <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-accent transition-colors" />
               </div>
-              <h3 className="font-semibold text-lg text-foreground mb-2">
+              <h3 className="font-semibold text-sm sm:text-base lg:text-lg text-foreground mb-1 sm:mb-2">
                 {service.title}
               </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 {service.description}
               </p>
             </div>
@@ -100,15 +100,15 @@ export function Services() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">
+        <div className="text-center mt-8 sm:mt-12 px-4 sm:px-0">
+          <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">
             Precisa de um serviço específico? Entre em contato conosco.
           </p>
           <a
             href="https://wa.me/5555984546494"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-accent font-medium hover:underline"
+            className="inline-flex items-center text-sm sm:text-base text-accent font-medium hover:underline"
           >
             Solicitar orçamento →
           </a>

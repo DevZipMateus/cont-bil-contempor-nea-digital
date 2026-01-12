@@ -27,29 +27,29 @@ export function Footer() {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container-custom py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="container-custom py-10 sm:py-12 lg:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="sm:col-span-2">
             <div className="flex items-center gap-3 mb-4 group">
               <img 
                 src={logoContemporanea} 
                 alt="Contemporânea Contábil" 
-                className="h-[120px] w-auto brightness-0 invert group-hover:opacity-80 transition-all duration-300"
+                className="h-20 sm:h-24 lg:h-[120px] w-auto brightness-0 invert group-hover:opacity-80 transition-all duration-300"
               />
             </div>
-            <p className="text-primary-foreground/70 max-w-sm mb-4 leading-relaxed">
+            <p className="text-sm sm:text-base text-primary-foreground/70 max-w-sm mb-4 leading-relaxed">
               Contabilidade moderna com confiança, transparência e resultados.
               Transformamos números em estratégias para o seu negócio.
             </p>
-            <p className="text-sm text-primary-foreground/50">
+            <p className="text-xs sm:text-sm text-primary-foreground/50">
               CNPJ: 12.035.734/0001-95
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Navegação</h3>
+            <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Navegação</h3>
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -59,7 +59,7 @@ export function Footer() {
                       e.preventDefault();
                       handleNavClick(link.href);
                     }}
-                    className="text-primary-foreground/70 hover:text-accent transition-all duration-300 hover:translate-x-1 inline-block"
+                    className="text-sm sm:text-base text-primary-foreground/70 hover:text-accent transition-all duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.label}
                   </a>
@@ -70,17 +70,17 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contato</h3>
+            <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Contato</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="https://wa.me/5555984546494"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-all duration-300"
+                  className="group flex items-center gap-2 text-sm sm:text-base text-primary-foreground/70 hover:text-accent transition-all duration-300"
                 >
-                  <div className="p-1.5 rounded-lg bg-primary-foreground/5 group-hover:bg-accent/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
-                    <Phone className="w-4 h-4" />
+                  <div className="p-1.5 rounded-lg bg-primary-foreground/5 group-hover:bg-accent/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 flex-shrink-0">
+                    <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </div>
                   <span className="group-hover:translate-x-1 transition-transform duration-300">(55) 98454-6494</span>
                 </a>
@@ -88,17 +88,17 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:contempocontabil@gmail.com"
-                  className="group flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-all duration-300"
+                  className="group flex items-center gap-2 text-sm sm:text-base text-primary-foreground/70 hover:text-accent transition-all duration-300"
                 >
-                  <div className="p-1.5 rounded-lg bg-primary-foreground/5 group-hover:bg-accent/20 transition-all duration-300 group-hover:scale-110 group-hover:-rotate-6">
-                    <Mail className="w-4 h-4" />
+                  <div className="p-1.5 rounded-lg bg-primary-foreground/5 group-hover:bg-accent/20 transition-all duration-300 group-hover:scale-110 group-hover:-rotate-6 flex-shrink-0">
+                    <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </div>
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">contempocontabil@gmail.com</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300 break-all">contempocontabil@gmail.com</span>
                 </a>
               </li>
-              <li className="group flex items-start gap-2 text-primary-foreground/70">
-                <div className="p-1.5 rounded-lg bg-primary-foreground/5 group-hover:bg-accent/20 transition-all duration-300 group-hover:scale-110 mt-0.5">
-                  <MapPin className="w-4 h-4" />
+              <li className="group flex items-start gap-2 text-sm sm:text-base text-primary-foreground/70">
+                <div className="p-1.5 rounded-lg bg-primary-foreground/5 group-hover:bg-accent/20 transition-all duration-300 group-hover:scale-110 mt-0.5 flex-shrink-0">
+                  <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </div>
                 <span className="group-hover:text-accent transition-colors duration-300">Alameda dos Ipês, 50</span>
               </li>
@@ -109,8 +109,8 @@ export function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-primary-foreground/10">
-        <div className="container-custom py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/50">
+        <div className="container-custom py-4 sm:py-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 text-xs sm:text-sm text-primary-foreground/50 text-center sm:text-left">
             <p>
               © {currentYear} Contemporânea Contábil. Todos os direitos reservados.
             </p>

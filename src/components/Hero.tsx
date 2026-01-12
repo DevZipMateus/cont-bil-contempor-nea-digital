@@ -45,7 +45,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-[200vh] sm:min-h-[140vh] flex items-start justify-center overflow-hidden"
+      className="relative min-h-screen lg:min-h-[100vh] flex items-start justify-center overflow-hidden"
     >
       {/* Background Carousel */}
       <div className="absolute inset-0">
@@ -66,11 +66,11 @@ export function Hero() {
           <CarouselContent className="h-full -ml-0">
             {heroImages.map((image, index) => (
               <CarouselItem key={index} className="h-full pl-0">
-                <div className="relative w-full min-h-[200vh] sm:min-h-[140vh]">
+                <div className="relative w-full min-h-screen lg:min-h-[100vh]">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full min-h-full object-cover absolute inset-0"
+                    className="w-full h-full object-cover absolute inset-0"
                     style={{ objectPosition: index === 0 ? '50% 70%' : 'center' }}
                   />
                   {/* Dark overlay */}
@@ -82,7 +82,7 @@ export function Hero() {
         </Carousel>
 
         {/* Carousel Indicators */}
-        <div className="absolute bottom-32 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        <div className="absolute bottom-8 sm:bottom-16 lg:bottom-32 left-1/2 -translate-x-1/2 z-20 flex gap-2">
           {heroImages.map((_, index) => (
             <button
               key={index}
@@ -114,35 +114,35 @@ export function Hero() {
         }}
       />
 
-      <div className="container-custom relative z-20 pt-24 md:pt-28">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+      <div className="container-custom relative z-20 pt-24 pb-20 md:pt-28 lg:pb-0">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left side - Text content */}
           <div className="flex-1 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 mb-8 animate-fade-up">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 mb-6 sm:mb-8 animate-fade-up">
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-              <span className="text-sm text-primary-foreground/80">
+              <span className="text-xs sm:text-sm text-primary-foreground/80">
                 Confiança, transparência e resultados
               </span>
             </div>
 
             {/* H1 - Nome da empresa */}
-            <h1 className="heading-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary-foreground mb-6 animate-fade-up animation-delay-100">
+            <h1 className="heading-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-primary-foreground mb-4 sm:mb-6 animate-fade-up animation-delay-100">
               Contemporânea Contábil
             </h1>
 
             {/* H2 - Descrição */}
-            <h2 className="text-lg sm:text-xl md:text-2xl text-primary-foreground/80 font-light max-w-2xl lg:max-w-xl mb-10 leading-relaxed animate-fade-up animation-delay-200">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-primary-foreground/80 font-light max-w-2xl mx-auto lg:mx-0 lg:max-w-xl mb-6 sm:mb-8 lg:mb-10 leading-relaxed animate-fade-up animation-delay-200 px-4 sm:px-0">
               Transformamos números em estratégias, contabilidade em crescimento.
               Sua parceira moderna para um futuro próspero.
             </h2>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-8 animate-fade-up animation-delay-300">
+            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3 sm:gap-4 mb-6 sm:mb-8 animate-fade-up animation-delay-300 px-4 sm:px-0">
               <Button
                 asChild
                 size="lg"
-                className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-gold text-base px-8"
+                className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 shadow-gold text-sm sm:text-base px-6 sm:px-8"
               >
                 <a
                   href="https://wa.me/5555984546494"
@@ -150,42 +150,42 @@ export function Hero() {
                   rel="noopener noreferrer"
                 >
                   Fale com um especialista
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
                 </a>
               </Button>
               <Button
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-primary-foreground/30 text-primary-foreground bg-primary-foreground/5 hover:bg-primary-foreground/10 hover:border-primary-foreground/50 text-base px-8"
+                className="w-full sm:w-auto border-primary-foreground/30 text-primary-foreground bg-primary-foreground/5 hover:bg-primary-foreground/10 hover:border-primary-foreground/50 text-sm sm:text-base px-6 sm:px-8"
               >
                 <a href="#sobre">Conheça nossa história</a>
               </Button>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-xl animate-fade-up animation-delay-400 mt-8">
-              <div className="flex flex-col items-center lg:items-start p-4 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
-                <TrendingUp className="w-6 h-6 text-accent mb-2" />
-                <span className="text-xl font-bold text-primary-foreground">+500</span>
-                <span className="text-xs text-primary-foreground/60">Empresas atendidas</span>
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 max-w-xl mx-auto lg:mx-0 animate-fade-up animation-delay-400 mt-6 sm:mt-8 px-2 sm:px-0">
+              <div className="flex flex-col items-center lg:items-start p-2 sm:p-4 rounded-xl sm:rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
+                <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-accent mb-1 sm:mb-2" />
+                <span className="text-lg sm:text-xl font-bold text-primary-foreground">+500</span>
+                <span className="text-[10px] sm:text-xs text-primary-foreground/60 text-center lg:text-left">Empresas atendidas</span>
               </div>
-              <div className="flex flex-col items-center lg:items-start p-4 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
-                <Shield className="w-6 h-6 text-accent mb-2" />
-                <span className="text-xl font-bold text-primary-foreground">100%</span>
-                <span className="text-xs text-primary-foreground/60">Compliance garantido</span>
+              <div className="flex flex-col items-center lg:items-start p-2 sm:p-4 rounded-xl sm:rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
+                <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-accent mb-1 sm:mb-2" />
+                <span className="text-lg sm:text-xl font-bold text-primary-foreground">100%</span>
+                <span className="text-[10px] sm:text-xs text-primary-foreground/60 text-center lg:text-left">Compliance garantido</span>
               </div>
-              <div className="flex flex-col items-center lg:items-start p-4 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
-                <Users className="w-6 h-6 text-accent mb-2" />
-                <span className="text-xl font-bold text-primary-foreground">Agro</span>
-                <span className="text-xs text-primary-foreground/60">Especialistas no setor</span>
+              <div className="flex flex-col items-center lg:items-start p-2 sm:p-4 rounded-xl sm:rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
+                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-accent mb-1 sm:mb-2" />
+                <span className="text-lg sm:text-xl font-bold text-primary-foreground">Agro</span>
+                <span className="text-[10px] sm:text-xs text-primary-foreground/60 text-center lg:text-left">Especialistas no setor</span>
               </div>
             </div>
           </div>
 
           {/* Right side - Sign image */}
-          <div className="flex-1 flex justify-center lg:justify-end animate-fade-up animation-delay-200">
-            <div className="relative w-full max-w-md lg:max-w-lg">
+          <div className="hidden lg:flex flex-1 justify-center lg:justify-end animate-fade-up animation-delay-200">
+            <div className="relative w-full max-w-sm lg:max-w-md xl:max-w-lg">
               <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-primary-foreground/20">
                 <img
                   src={heroSign}
