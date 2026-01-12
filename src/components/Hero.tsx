@@ -190,7 +190,7 @@ export function Hero() {
                 <img
                   src={heroSign}
                   alt="Placa da Contemporânea Contábil na entrada do escritório"
-                  className="w-full h-[500px] xl:h-[600px] object-cover object-[center_20%]"
+                  className="w-full h-[500px] xl:h-[600px] object-cover object-[center_10%]"
                 />
                 {/* Gradiente inferior para suavizar a transição */}
                 <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-primary/80 to-transparent" />
