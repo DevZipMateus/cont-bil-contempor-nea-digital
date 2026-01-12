@@ -45,7 +45,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen lg:min-h-[100vh] flex items-start justify-center overflow-hidden"
+      className="relative min-h-[110vh] lg:min-h-[115vh] flex items-start justify-center overflow-hidden"
     >
       {/* Background Carousel */}
       <div className="absolute inset-0 overflow-hidden">
