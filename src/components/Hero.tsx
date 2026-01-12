@@ -8,21 +8,26 @@ import {
 import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 
-import heroAccounting from "@/assets/hero-accounting-1.jpg";
-import heroAgro from "@/assets/hero-agro-2.jpg";
-import heroTeam from "@/assets/hero-team-3.jpg";
+import heroOffice from "@/assets/hero-office-1.jpg";
+import heroSign from "@/assets/hero-sign-2.jpg";
+import heroAccountingDesk from "@/assets/hero-accounting-desk.jpg";
+import heroTeamMeeting from "@/assets/hero-team-meeting.jpg";
 
 const heroImages = [
   {
-    src: heroAccounting,
-    alt: "Escritório de contabilidade moderno com laptop exibindo gráficos financeiros",
+    src: heroOffice,
+    alt: "Recepção moderna do escritório Contemporânea Contábil",
   },
   {
-    src: heroAgro,
-    alt: "Vista aérea de campos agrícolas representando o agronegócio brasileiro",
+    src: heroSign,
+    alt: "Placa da Contemporânea Contábil na entrada do escritório",
   },
   {
-    src: heroTeam,
+    src: heroAccountingDesk,
+    alt: "Mesa de trabalho profissional com relatórios financeiros e calculadora",
+  },
+  {
+    src: heroTeamMeeting,
     alt: "Equipe profissional em reunião analisando dados financeiros",
   },
 ];
