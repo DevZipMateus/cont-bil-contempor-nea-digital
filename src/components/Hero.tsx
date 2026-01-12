@@ -185,12 +185,12 @@ export function Hero() {
 
           {/* Right side - Sign image */}
           <div className="hidden lg:flex flex-1 justify-center lg:justify-end animate-fade-up animation-delay-200">
-            <div className="relative w-full max-w-sm lg:max-w-md xl:max-w-lg">
+            <div className="relative w-full max-w-xs lg:max-w-sm xl:max-w-md">
               <div className="rounded-2xl overflow-hidden shadow-2xl relative">
                 <img
                   src={heroSign}
                   alt="Placa da Contemporânea Contábil na entrada do escritório"
-                  className="w-full h-[500px] xl:h-[600px] object-cover object-[center_30%]"
+                  className="w-full h-[380px] lg:h-[420px] xl:h-[480px] object-cover object-[center_30%]"
                 />
                 {/* Gradiente inferior para suavizar a transição */}
                 <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-primary/80 to-transparent" />
