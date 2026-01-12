@@ -48,7 +48,7 @@ export function Hero() {
       className="relative min-h-screen lg:min-h-[100vh] flex items-start justify-center overflow-hidden"
     >
       {/* Background Carousel */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         <Carousel
           setApi={setApi}
           opts={{
@@ -61,16 +61,16 @@ export function Hero() {
               stopOnInteraction: false,
             }),
           ]}
-          className="w-full h-full"
+          className="w-full h-full overflow-hidden"
         >
-          <CarouselContent className="h-full -ml-0">
+          <CarouselContent className="h-full ml-0">
             {heroImages.map((image, index) => (
-              <CarouselItem key={index} className="h-full pl-0">
-                <div className="relative w-full min-h-screen lg:min-h-[100vh]">
+              <CarouselItem key={index} className="h-full pl-0 min-w-full">
+                <div className="relative w-full h-screen">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover absolute inset-0"
+                    className="w-full h-full object-cover"
                     style={{ objectPosition: index === 0 ? '50% 70%' : 'center' }}
                   />
                   {/* Dark overlay */}
