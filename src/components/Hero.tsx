@@ -114,7 +114,7 @@ export function Hero() {
         }}
       />
 
-      <div className="container-custom relative z-20 pt-24 pb-20 md:pt-28 lg:pb-0">
+      <div className="container-custom relative z-20 pt-24 pb-32 md:pt-28 lg:pb-24">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left side - Text content */}
           <div className="flex-1 text-center lg:text-left">
@@ -204,7 +204,7 @@ export function Hero() {
       </div>
 
       {/* Bottom Gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-20" />
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent z-10" />
     </section>
   );
 }
