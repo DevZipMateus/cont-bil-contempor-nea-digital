@@ -75,7 +75,7 @@ export function Hero() {
                     src={image.src}
                     alt={image.alt}
                     className="w-full min-h-full object-cover absolute inset-0"
-                    style={{ objectPosition: index === 0 ? '50% 70%' : index === 1 ? '50% 10%' : 'center' }}
+                    style={{ objectPosition: index === 0 ? '50% 70%' : index === 1 ? 'center center' : 'center' }}
                   />
                   {/* Dark overlay */}
                   <div className="absolute inset-0 bg-primary/80" />
