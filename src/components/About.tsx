@@ -76,28 +76,28 @@ export function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 rounded-3xl transform -rotate-3" />
               
               {/* Main card */}
-              <div className="relative bg-card rounded-3xl shadow-card p-8 min-h-[420px] sm:h-full flex flex-col justify-center border border-border">
+              <div className="relative bg-card rounded-3xl shadow-card p-6 sm:p-8 min-h-[350px] sm:min-h-[420px] h-full flex flex-col justify-center border border-border">
                 <div className="text-center">
                   <img 
                     src={logoHistoria} 
                     alt="Contemporânea Contábil" 
-                    className="w-48 h-auto mx-auto mb-6 rounded-2xl"
+                    className="w-32 sm:w-40 md:w-48 h-auto mx-auto mb-4 sm:mb-6 rounded-2xl"
                   />
-                  <h3 className="font-playfair text-2xl font-semibold text-foreground mb-2">
+                  <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-foreground mb-2">
                     Contemporânea Contábil
                   </h3>
-                  <p className="text-muted-foreground italic mb-6">
+                  <p className="text-sm sm:text-base text-muted-foreground italic mb-4 sm:mb-6">
                     "Confiança, transparência e resultados"
                   </p>
-                  <div className="flex justify-center gap-6">
+                  <div className="flex justify-center gap-4 sm:gap-6">
                     <div className="text-center">
-                      <span className="block text-2xl font-bold text-accent">15+</span>
-                      <span className="text-xs text-muted-foreground">Anos de experiência</span>
+                      <span className="block text-xl sm:text-2xl font-bold text-accent">15+</span>
+                      <span className="text-[10px] sm:text-xs text-muted-foreground">Anos de experiência</span>
                     </div>
                     <div className="w-px bg-border" />
                     <div className="text-center">
-                      <span className="block text-2xl font-bold text-accent">100%</span>
-                      <span className="text-xs text-muted-foreground">Satisfação</span>
+                      <span className="block text-xl sm:text-2xl font-bold text-accent">100%</span>
+                      <span className="text-[10px] sm:text-xs text-muted-foreground">Satisfação</span>
                     </div>
                   </div>
                 </div>
