@@ -10,8 +10,8 @@ import Autoplay from "embla-carousel-autoplay";
 
 import heroOffice from "@/assets/hero-office-1.jpg";
 import heroSign from "@/assets/hero-sign-2.jpg";
-import heroAccountingDesk from "@/assets/hero-accounting-desk.jpg";
-import heroTeamMeeting from "@/assets/hero-team-meeting.jpg";
+import heroWorkspace from "@/assets/hero-workspace-1.jpg";
+import heroOfficeRoom from "@/assets/hero-office-room.jpg";
 
 const heroImages = [
   {
@@ -23,12 +23,12 @@ const heroImages = [
     alt: "Placa da Contemporânea Contábil na entrada do escritório",
   },
   {
-    src: heroAccountingDesk,
+    src: heroWorkspace,
     alt: "Mesa de trabalho profissional com relatórios financeiros e calculadora",
   },
   {
-    src: heroTeamMeeting,
-    alt: "Equipe profissional em reunião analisando dados financeiros",
+    src: heroOfficeRoom,
+    alt: "Sala de reuniões moderna com documentos financeiros",
   },
 ];
 
