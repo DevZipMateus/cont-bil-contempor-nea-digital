@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 
 import heroOffice from "@/assets/hero-office-1.jpg";
+import heroSign from "@/assets/hero-sign-2.jpg";
 import heroWorkspace from "@/assets/hero-workspace-1.jpg";
 import heroOfficeRoom from "@/assets/hero-office-room.jpg";
 
@@ -16,6 +17,10 @@ const heroImages = [
   {
     src: heroOffice,
     alt: "Recepção moderna do escritório Contemporânea Contábil",
+  },
+  {
+    src: heroSign,
+    alt: "Placa da Contemporânea Contábil na entrada do escritório",
   },
   {
     src: heroWorkspace,
@@ -70,7 +75,7 @@ export function Hero() {
                     src={image.src}
                     alt={image.alt}
                     className="w-full min-h-full object-cover absolute inset-0"
-                    style={{ objectPosition: index === 0 ? '50% 70%' : 'center' }}
+                    style={{ objectPosition: index === 0 ? '50% 70%' : index === 1 ? '50% 50%' : 'center' }}
                   />
                   {/* Dark overlay */}
                   <div className="absolute inset-0 bg-primary/80" />
